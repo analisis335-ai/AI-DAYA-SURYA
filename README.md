@@ -1,1 +1,2 @@
-ini adalah ai prediksi potensi tenaga surya dari 17 daerah di indonesia di masa mendatang
+coba lihat kodenya terus lanjutkan untuk sel selanjutnya, kodenya ada di repo sebelumnya dengan nama commit "fitur baru" salin kode di sel selanjutnya lalu pindahkan di branchmu
+
