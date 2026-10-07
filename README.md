@@ -30,7 +30,7 @@ Proyek ini berkaitan dengan **SDG 7: Energi Bersih dan Terjangkau**, terutama up
 
 - **Lokasi:** 17 kota, masing-masing memiliki satu catatan per hari.
 
-- **Sumber yang dicatat dalam notebook:** NASA POWER Daily API.
+- **Sumber dan cara pengambilan:** NASA POWER Data Access Viewer (DAV).
 
 - **Satuan target:** kWh/m²/hari.
 
@@ -38,9 +38,9 @@ Kota yang tercakup: Ambon, Banda Aceh, Bandar Lampung, Banjarmasin, Denpasar, Ja
 
 ### Asal dan batasan sumber data
 
-Notebook proyek mencatat NASA POWER Daily API sebagai sumber data. Dataset CSV merupakan berkas gabungan yang digunakan dalam proyek, bukan satu file 17 kota yang diterbitkan NASA. NASA POWER menyediakan data berdasarkan koordinat dan periode yang diminta melalui [Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/) atau [Daily API](https://power.larc.nasa.gov/docs/services/api/temporal/daily/).
+Data diunduh melalui [NASA POWER Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/) dengan memilih koordinat dan rentang waktu, lalu disusun menjadi satu CSV untuk proyek. CSV gabungan 17 kota tersebut bukan satu file siap unduh yang diterbitkan NASA.
 
-CSV ini tidak menyertakan skrip pengambilan awal, URL permintaan asli, atau arsip respons API. Karena itu, angka-angkanya belum dapat direproduksi persis dari catatan proyek yang tersedia. Permintaan API yang dibuat sekarang dapat menghasilkan nilai yang sedikit berbeda. NASA POWER menyediakan data harian berbasis produk satelit dan model pada koordinat yang diminta, bukan pengukuran langsung dari stasiun cuaca yang berada tepat di setiap kota.
+Berkas ekspor awal dan catatan pilihan parameter DAV tidak disertakan bersama CSV. Karena itu, pengunduhan ulang mungkin tidak menghasilkan angka yang persis sama. NASA POWER menyajikan data harian berbasis produk satelit dan model untuk koordinat yang dipilih, bukan pengukuran langsung dari stasiun cuaca yang berada tepat di setiap kota.
 
 ### Kolom dataset
 
@@ -140,6 +140,8 @@ Evaluasi dilakukan pada data uji 2023–2024 yang tidak dipakai untuk melatih mo
 ```
 .
 ├── dataset_radiasi_surya_indonesia.csv
+├── model_inputan_terminal.py
+├── model_radiasi.joblib
 ├── project2.ipynb
 └── README.md
 ```
@@ -179,8 +181,8 @@ Notebook melatih dan mengevaluasi model. Berkas skrip prediksi terminal (`predik
 
 ## Referensi
 
-- NASA POWER, [Daily API Documentation](https://power.larc.nasa.gov/docs/services/api/temporal/daily/).
-
 - NASA POWER, [Data Access Viewer](https://power.larc.nasa.gov/data-access-viewer/).
+
+- NASA POWER, [Daily API Documentation](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) (referensi opsional untuk pengambilan data melalui kode; bukan cara pengambilan yang dipakai dalam proyek ini).
 
 - United Nations, [SDG 7: Affordable and Clean Energy](https://sdgs.un.org/goals/goal7).
