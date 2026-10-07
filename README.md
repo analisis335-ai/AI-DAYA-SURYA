@@ -1,4 +1,4 @@
-# Prediksi Radiasi Matahari Harian di Indonesia dengan Random Forest
+# Prediksi Radiasi Matahari Harian di 17 kota di Indonesia dengan Random Forest
 
 ## Proyek AI untuk SDG 7: Energi Bersih dan Terjangkau
 
