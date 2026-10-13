@@ -186,3 +186,7 @@ Notebook melatih dan mengevaluasi model. Berkas skrip prediksi terminal (`predik
 - NASA POWER, [Daily API Documentation](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) (referensi opsional untuk pengambilan data melalui kode; bukan cara pengambilan yang dipakai dalam proyek ini).
 
 - United Nations, [SDG 7: Affordable and Clean Energy](https://sdgs.un.org/goals/goal7).
+
+- Rumbayan, M., Abudureyimu, A., & Nagasaka, K. (2012). Mapping of solar energy potential in Indonesia using artificial neural network and geographical information system. *Renewable and Sustainable Energy Reviews*, 16, 1437-1449. [https://doi.org/10.1016/j.rser.2011.11.024](https://doi.org/10.1016/j.rser.2011.11.024)
+
+- Noviyanti, P., Sari, M., & Kusnanto. (2025). Predicting the potential of renewable solar energy based on weather data in Indonesia using the Random Forest method. *G-Tech: Jurnal Teknologi Terapan*, 9(4), 1771-1781. [https://doi.org/10.70609/g-tech.v9i4.7776](https://doi.org/10.70609/g-tech.v9i4.7776)
